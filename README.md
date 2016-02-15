@@ -16,3 +16,7 @@ VNC Server with Firefox
 
     `docker run -d -p 2222:22 5900:5900 -e ROOTPASSWORD=<mypassword> fayehuang/centos-vnc` 
 
+* 指定 vnc 解析度，**GEOMETRY**=1440x900 (預設解析度為 1024x768)
+
+    `docker run -d -p 2222:22 5900:5900 -e ROOTPASSWORD=<mypassword> -e GEOMETRY=1440x900 fayehuang/centos-vnc`
+
